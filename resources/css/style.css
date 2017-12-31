@@ -1,0 +1,319 @@
+body{
+  background-color: grey;
+  font-size: 18px;
+  font-family: helvetica;
+  color: white;
+}
+div{
+}
+
+/** general items **/
+.outercontainer{
+  width: 100%;
+  margin: auto;
+}
+.container{
+  width: 960px;
+  display: flex;
+  margin: auto;
+}
+
+/** header elements**/
+.logo {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.navi ul{
+  display: flex;
+
+}
+.top{
+  background-color: black;
+  color: white;
+  margin-top: auto;
+  align-items: center;
+}
+.top p{
+  margin-left: 1rem;
+  padding: 0.66rem 0;
+}
+.outercontainer.banner{
+  background-image: url(../images/moto.jpeg);
+  height: 25rem;
+  background-size: cover;
+}
+.banner
+{
+  align-items: center;
+  height: 100%;
+}
+
+.slogen {
+  width: 25rem;
+  background-color: black;
+}
+
+.slogen p {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.slogen h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  margin-top: 0.25rem;
+  padding-bottom: 2rem;
+}
+
+.navi{
+  background-color: firebrick;
+}
+
+ul.container {
+  background-color: firebrick;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+}
+
+/** main elements**/
+.catalog{
+  background-color: white;
+}
+
+.products{
+  background-color: inherit;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.product1, .product2, .product3 {
+  width: 30%;
+  border: 4px solid black;
+}
+
+.desc{
+  justify-content: space-between;
+}
+
+.productname1 , .productname2, .productname3{
+  background-color: black;
+  width: 30%;
+  margin-bottom: 3rem;
+  border: 4px solid black;
+  border-top: none;
+  text-align: center;
+  padding: 0.25rem 0;
+
+}
+.imagebox{
+width: 100%;
+}
+
+.product1, .product2, .product3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pimage1, .pimage2 {
+  height: 9rem;
+  padding: 2rem 0;
+}
+
+.pimage3 {
+  height: 3rem;
+  margin: 5rem 0;
+}
+
+.product{
+
+}
+
+.productname1 p, .productname2 p, .productname3 p{
+  background-color: black;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+/**.box{
+  height: 9rem;
+}
+
+.image1 {
+  background-image: url(../images/pen.png);
+  background-size:  contain;
+  background-repeat: no-repeat;
+}
+**/
+
+
+/** footer area **/
+.info
+{
+  justify-content: space-between;
+  background-color: inherit;
+}
+
+.general
+{
+  background-color: white;
+  padding-bottom: 4rem;
+}
+
+.location, .hours
+{
+  width: 35%;
+}
+
+.infohead {
+  background-color: black;
+  text-align: left;;
+}
+
+.infohead p{
+  padding: 1rem 0 1rem 2rem;
+}
+
+.infotext{
+  color: grey;
+}
+
+.lower {
+  background-color: black;
+  height: 10rem;
+}
+
+.bottom
+{
+  text-align: left;
+  background-color: inherit;
+  height: inherit;;
+}
+
+.bottom p{
+  margin: auto 0;
+}
+
+/** SIZE ADJUSTMENTS **/
+ul.s1024  {
+  display: none;
+}
+
+.s470px {
+  display: none;
+}
+
+/** ------------------------------------------------ **/
+/** adjustments to other screen sizes**/
+
+/** lower than 1024px**/
+
+@media only screen and (max-width: 1024px) {
+  .container{
+    width: 100%;
+  }
+
+  .slogen p{
+    font-size: 0.75rem;
+  }
+
+  .slogen h1{
+    font-size: 1.5rem;
+  }
+
+  ul.container
+  {
+    display: none;
+  }
+
+  nav{
+    width: 100%;
+  }
+  ul.s1024  {
+    display:  flex;
+    background-color: firebrick;
+    font-size: 1rem;
+    padding: 0.75rem 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .s1024 li{
+    width: 100%;
+    text-align: center;
+  }
+  .product3, .productname3{
+    display: none;
+  }
+  .product1, .product2, .productname1, .productname2{
+    width: 47%;
+  }
+   .location, .hours {
+    width: 35%;
+  }
+}
+
+/** lower than 470px**/
+@media only screen and (max-width: 470px) {
+  .outercontainer.banner{
+  height: 15rem;
+  }
+  .full
+  {
+    display: none;
+  }
+  .banner, .slogen{
+  width: 100%;
+  }
+
+  .slogen{
+  margin-bottom: 0.5rem;
+  }
+
+  .s470px
+  {
+    display: block;
+  }
+
+  .slogen p{
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+
+  .slogen h1{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .banner{
+    align-items: flex-end;
+  }
+  .product2, .productname2{
+    display: none;
+  }
+  .product1, .productname1{
+    width: 90%;
+  }
+
+  .products, .desc{
+    justify-content: center;
+  }
+
+  .info{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .hours{
+    width: 90%;
+  }
+
+  .hours{
+    margin-top: 0.5rem;
+  }
+
+}
